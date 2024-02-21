@@ -175,11 +175,11 @@ footer .content .top {
 }
 
 .top .media-icons a:nth-child(2) {
-    background: rgb(29, 161, 242);
+    background: black;
 }
 
 .top .media-icons a:nth-child(2):hover {
-    color: rgb(29, 161, 242);
+    color: black;
     background: #fff;
 }
 
