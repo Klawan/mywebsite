@@ -1,4 +1,5 @@
 8
+
 .madobi body {
     font-family: Arial, sans-serif;
     justify-content: center;
@@ -226,7 +227,6 @@ footer .content .top {
 
 footer{
     background: #513002;
-    color: #513002;
 }
 
 .footer-button:hover {
