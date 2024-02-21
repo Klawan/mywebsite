@@ -166,11 +166,11 @@ footer .content .top {
 }
 
 .top .media-icons a:nth-child(1) {
-    background: rgb(61, 26, 156);
+    background: rgb(8, 102, 255);
 }
 
 .top .media-icons a:nth-child(1):hover {
-    color: rgb(62, 36, 133);
+    color: rgb(8, 102, 255);
     background: #fff;
 }
 
