@@ -8,7 +8,23 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        .car {
+        
+    .image-zoom-container {
+  overflow: hidden;
+}
+
+.zoom-img {
+  animation: zoom-in 1s ease forwards;
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}        .car {
             display: flex;
             align-items: center;
         }
@@ -66,7 +82,9 @@
         <main class="kkk">
             <h2 class="musa">HOME</h2> <hr>
             <div class="car">
+            <div class="image-zoom-container">
                 <img src="image/klm.jpg" alt="bbb" class="left-image">
+            </div>
                 <div class="text-container">
                     <p>You are welcome to the klawan website once again. this is personal website and is belongs to KAMAL LAWAN</p>
                     <p>
