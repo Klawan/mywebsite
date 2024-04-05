@@ -8,19 +8,29 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-     .text-container {
+  .text-container {
   overflow: hidden;
-  animation: zoom-left 5s ease forwards;
-} 
+  position: relative; /* Add position relative to enable positioning from the right */
+  animation: bounce-in-right 1s ease forwards;
+}
 
-@keyframes zoom-left {
+@keyframes bounce-in-right {
   from {
-    transform: scale(0.5);
+    transform: translateX(100%) scale(0.5); /* Start off-screen to the right and scaled down */
+    opacity: 0; /* Initially invisible */
+  }
+  60% {
+    transform: translateX(0) scale(1.1); /* Move in and slightly scale up */
+    opacity: 1; /* Fade in */
+  }
+  80% {
+    transform: translateX(-20%) scale(0.95); /* Slightly move back */
   }
   to {
-    transform: scale(1);
+    transform: translateX(0) scale(1); /* Final position and scale */
   }
-}
+}   
+
       .image-zoom-container {
   overflow: hidden;
 }
