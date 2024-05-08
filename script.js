@@ -7,7 +7,7 @@ function toggleMenu() {
 document.addEventListener('click', function(event) {
     var menu = document.querySelector('.menu');
     if (event.target !== menu && ! menu.contains(event.target)) {
-        menu.style.display = 'none';
+        menu.style.display = 'none'; 
     }
 });
 
