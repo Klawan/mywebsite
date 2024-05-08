@@ -61,7 +61,7 @@
             <a href="#" onclick="loadContent('schools.html')">Schools</a>
             <a href="#" onclick="loadContent('friends.html')">Friends</a>
             <a href="#" onclick="loadContent('family.html')">Family</a>
-            <a href="index.html">Logout</a>
+            <a id="logout-btn">Logout</a>
         </div>
         <main class="kkk">
             <h2 class="musa"> DASHBOARD</h2> <hr>
@@ -156,6 +156,12 @@
             </div>
         </footer>
     </div>
+    <script>
+        document.getElementById("logout-btn").addEventListener("click", function() {
+  // Redirect to the login page when the logout button is clicked
+  window.location.href = "index.html";
+});
+    </script>
     <script src="logout.js"></script>
     <script src="madodi.js"></script>
 </body>
