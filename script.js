@@ -14,7 +14,7 @@ document.addEventListener('click', function(event) {
 
 var dashboardContent;
 
-loadDashboardContent();
+loadDashboardContent(); 
 
 function loadDashboardContent() {
     var xhttp = new XMLHttpRequest();
