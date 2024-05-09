@@ -29,8 +29,19 @@
     transform: scale(1);
   }
                 }
-        .text-container {
+         .zoom-in-right {
+            animation: zoomInRight 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             flex: 3; /* Take up all available space */
+        }
+        @keyframes zoomInRight {
+  0% {
+    opacity: 0;
+    transform: scale(0) translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
         }
         img {
             width: 220px;
@@ -80,8 +91,8 @@
         <main class="kkk">
             <h2 class="musa"> DASHBOARD</h2> <hr>
             <div class="car">
-                <img src="image/klm.jpg" alt="bbb" class="box zoom-in">
-                <div class="text-container">
+                <img src="Image/klm.jpg" alt="bbb" class="box zoom-in">
+                <div class="zoom-in-right">
                     <p>You are welcome to the klawan website once again. this is personal informational website, is belongs KAMAL LAWAN</p>
                     <p>
                         <blockquote>is prohibited some one vist without permission of its owner. you can view the list mention below to see what support to see in this site</blockquote>
