@@ -7,6 +7,23 @@
     <title>About</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button :hover {
+  background-color: #45a049; /* Darker green on hover */
+} 
         .lagos {
             border: 1px solid rgb(110, 105, 105);
             padding: 20px;
@@ -138,7 +155,7 @@
             <a href="#" onclick="loadContent('schools.html')">Schools</a>
             <a href="#" onclick="loadContent('friends.html')">Friends</a>
             <a href="#" onclick="loadContent('family.html')">Family</a>
-            <a href="index.html">Logout</a>
+            <button id="logout-btn">Logout</button>
         </div>
         <main class="dwww">
             <h2 class="mama">About klawan</h2><hr>
@@ -207,7 +224,13 @@
 
         <footer>
         </footer>
-    </div> 
+   </div>
+     <script>
+        document.getElementById("logout-btn").addEventListener("click", function() {
+  // Redirect to the login page when the logout button is clicked
+  window.location.href = "index.html";
+});
+     </script>
     <script src="logout.js"></script>
     <script src="madodi.js"></script>
 </body>
