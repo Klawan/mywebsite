@@ -6,6 +6,23 @@
     <title>Family</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button :hover {
+  background-color: #45a049; /* Darker green on hover */
+} 
         .kura {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
@@ -78,7 +95,7 @@
             <a href="#" onclick="loadContent('about.html')">About Klawan</a>
             <a href="#" onclick="loadContent('schools.html')">Schools</a>
             <a href="#" onclick="loadContent('friends.html')">Friends</a>
-           <a href="index.html">Logout</a>
+            <button id="logout-btn">Logout</button>
         </div>
         <main id="kura"> 
             <h1>Family</h1> <hr>
@@ -215,7 +232,13 @@
                 </div>
             </div>
         </main>
-    </div> 
+    </div>
+     <script>
+        document.getElementById("logout-btn").addEventListener("click", function() {
+  // Redirect to the login page when the logout button is clicked
+  window.location.href = "index.html";
+});
+     </script>
     <script src="logout.js"></script>
     <script src="madodi.js"></script>
 </body>
