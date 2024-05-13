@@ -184,11 +184,15 @@ footer .content .top {
 
 
 .top .media-icons a:nth-child(3) {
-    background: rgb(179, 18, 23);
+     background: radial-gradient(
+          circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%
+          );
 }
 
 .top .media-icons a:nth-child(3):hover {
-    color: rgb(179, 18, 23);
+     color: radial-gradient(
+          circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%
+          );
     background: #fff;
 }
 
