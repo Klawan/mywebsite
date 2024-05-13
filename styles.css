@@ -134,9 +134,6 @@ footer .content {
     margin: auto;
     padding: 30px 40px 40px 40px;
 }
-footer {
-    color: #708090;
-}
 
 footer .content .top {
     display: flex;
@@ -231,7 +228,7 @@ footer .content .top {
 
 
 footer{
-    background: #513002;
+    background: #708090;
 }
 
 .footer-button:hover {
@@ -294,7 +291,7 @@ footer .content .link-boxes .box {
     width: calc(100% + 55px);
     outline: none;
     border: 2px solid #AFAFB6;
-    background: #140B5C;
+    background: #708090;
     border-radius: 4px;
     padding: 0 15px;
     font-size: 15px;
@@ -334,7 +331,7 @@ footer .bottom-details .bottom_text {
 footer .bottom-details {
     color: #83838d;
     width: 100%;
-    background: #12192c;
+    background: #708090;
     padding-left: 2px;
 }
 
