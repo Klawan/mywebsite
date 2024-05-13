@@ -126,13 +126,16 @@ footer::before {
     top: 100px;
     height: 1px;
     width: 100%;
-    background: #12192c;
+    background:;
 }
 
 footer .content {
     max-width: 1250px;
     margin: auto;
     padding: 30px 40px 40px 40px;
+}
+footer {
+    background: #708090;
 }
 
 footer .content .top {
