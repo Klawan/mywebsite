@@ -60,6 +60,66 @@
             text-align: center;
             color: rgb(99, 34, 34);
         }
+        @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body{
+  background: ;
+  font-family: ;
+}
+
+.kano {
+  display: flex;
+/*   border:1px solid red; */
+  height: 100%;
+  align-items: center;
+  font-weight: bold;
+}
+
+svg {
+    display: block;
+    font: 8.5em 'Klawan-website';
+    width: 450px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 3.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: #4D163D;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: #840037;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: green;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #BD0034;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #745731;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+        }
     </style>
 </head>
 <body>
@@ -90,6 +150,21 @@
         </div>
         <main class="kkk">
             <h2 class="musa"> DASHBOARD</h2> <hr>
+             <div class="kano">
+  <svg viewBox="0 0 960 300">
+    <symbol id="s-text">
+      <text text-anchor="middle" x="50%" y="80%">Klawan-Website</text>
+    </symbol>
+
+    <g class = "g-ants">
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+    </g>
+  </svg>
+</div>  
             <div class="car">
                 <img src="image/klm.jpg" alt="bbb" class="box zoom-in">
                 <div class="zoom-in-right">
